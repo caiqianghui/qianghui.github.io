@@ -1,0 +1,102 @@
+.form-container {
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  &-save {
+    font-size: 14px;
+    padding: 10px 0;
+    color: #1677ff;
+  }
+  &-container {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    &-base {
+      flex: 1;
+      // 禁用
+      .disable {
+        background-color: #f2f2f2;
+      }
+      .disable &-item {
+        &-label,
+        &-element {
+          color: #999;
+        }
+      }
+      &-item {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #FAFAFA;
+        &-label {
+          flex: 1.8;
+          text-align: right;
+          font-size: 14px;
+        }
+        &-required {
+          width: 2px;
+          height: 14px;
+          margin-left: 4px;
+          background-color: red;
+        }
+        &-element {
+          background: #fff;
+          flex: 3;
+          display: flex;
+          padding: 15px 0;
+          justify-content: flex-end;
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+    &-sum {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      &-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &-label {
+          color: #333;
+        }
+        &-input {
+          flex: 1;
+          background-color: #F2F2F2;
+          margin-left: 10px;
+        }
+      }
+    }
+    &-sub {
+      flex: 1;
+      &-add {
+        padding: 10px 20px;
+        text-align: center;
+        background-color: #FFF;
+        margin-bottom: 10px;
+        &-title {
+          font-size: 16px;
+          color: #333;
+        }
+      }
+    }
+  }
+  &-collapse {
+    &-content {
+      &-arrow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    .adm-list-item-content {
+      flex: 1;
+      .ant-form-item {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,431 @@
+
+.taro_page.taro_page_show {
+  background-color: #F7F7F8;
+}
+.add-btn {
+  padding: 20px;
+}
+
+.section-item {
+  margin-bottom: 5px;
+}
+
+.home-form {
+  height: 100%;
+  // position: relative;
+  .form-save {
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(0, 128, 255);
+  }
+  .form-container {
+    height: calc(100vh - 45px);
+    overflow-y: scroll;
+    // position: absolute;
+    // top: 0px;
+    .submit-btn {
+      height: 50px;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+    .step-submit-btn {
+      padding: 10px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .pre-btn {
+        margin-right: 10px;
+      }
+    }
+  }
+  .title {
+    // display: flex;
+    // flex: 1;
+    // // padding: 16px;
+    // font-size: 32px;
+    .normal-field {
+      padding: 0 10px;
+    }
+  }
+  .hr {
+    width: 100%;
+    height: 2px;
+    // background-color: #F7F7F8;
+    // background-color: #F2F2F3;
+  }
+
+}
+
+.form-item {
+  background-color: #F2F2F3;
+}
+
+.form-item-label {
+  margin-bottom: 0;
+  margin-top: 0;
+  .space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .formItem {
+    background: #FAFAFA;
+    .label {
+      font-size: 14px;
+      flex: 3.4;
+      padding-right: 6px;
+      text-align: right;
+      color: #666666;
+      .required {
+        margin-right: 5px;
+        font-family: SimSun,sans-serif;
+        color: var(--adm-color-danger);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    }
+    .label.disable {
+      color:rgb(223, 222, 222);
+    }
+    .element-field {
+      flex: 6.6;
+      background: #fff;
+      display: flex;
+      padding: 15px 0;
+    }
+    .element {
+      flex: 6.6;
+      background: #fff;
+      display: flex;
+      padding: 15px 0;
+      justify-content: flex-end;
+      border-bottom: 1px solid #eee;
+    }
+    .element.disable {
+      background: #FAFAFA;
+    }
+  }
+}
+
+// .form-item-label-disable {
+//   background-color: rgba(0, 0, 0, 0);
+// }
+
+.baseSectiosContent {
+  .collapse-content {
+    border-top: none;
+    .adm-list {
+      --border-top: none;
+      --border-bottom: none;
+    }
+    .adm-list.adm-list-default {
+      background-color: #F2F2F3;
+      --border-inner: none;
+      .adm-plain-anchor.adm-collapse-panel-header {
+        border-top: 1px solid var(--adm-border-color);
+        padding: 12px 12px 0 12px;
+      }
+      .adm-list-item {
+        padding-left: 0;
+        .adm-list-item-content {
+          padding: 0;
+          border-bottom: 1px solid var(--adm-border-color);
+          padding-bottom: 12px;
+        }
+      }
+      .adm-collapse-panel-content {
+        background-color: #F7F7F8;
+      }
+    }
+    .title-content {
+      background: #FFF;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    padding: 10px 20px;
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+
+  .buttomBtn {
+    padding-top: 10px;
+    // background-color: #F7F7F8;
+    .buttomBtnText {
+      color: #999;
+      font-size: 12px;
+    }
+  }
+}
+
+.subSelectionContent {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  .section-content {
+    .adm-plain-anchor.adm-collapse-panel-header {
+      padding: 0 12px;
+    }
+    .adm-list-item {
+      padding-left: 0;
+      .adm-list-item-content {
+        padding: 0;
+        padding: 12px 0;
+      }
+    }
+  }
+  .title {
+    color: #666666;
+  }
+  .collapse-content {
+    // padding-top: 10px;
+    background-color: rgb(255, 255, 255);
+    .adm-list {
+      --border-top: none;
+      --border-bottom: none;
+    }
+    .adm-list.adm-list-default {
+      background-color: #F2F2F3;
+      --border-inner: none;
+      .adm-plain-anchor.adm-collapse-panel-header {
+        padding-left: 24px;
+        padding-right: 12px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        .adm-list-item-content {
+          flex: 1;
+          .ant-form-item {
+            margin-bottom: 0px !important;
+          }
+        }
+      }
+      .adm-collapse-panel-content {
+        background-color: #F7F7F8;
+      }
+      .adm-list-item {
+        padding-left: 0;
+        .adm-list-item-content {
+          padding: 0;
+        }
+      }
+    }
+    .title-content {
+      background: #FFF;
+    }
+  }
+  .arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .delete {
+      padding-left: 10px;
+    }
+  }
+  .swiperContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .swiperContent-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: #F2F2F3;
+    }
+    .buttomBtn {
+      padding-top: 10px;
+      .buttomBtnText {
+        color: #999;
+        font-size: 12px;
+      }
+    }
+  }
+  .addContent {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #FFF;
+  }
+}
+
+.sumFieldContent {
+  margin-bottom: 0;
+  .sumFiledItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    .disableSumInput {
+      color: red !important;
+      background: white !important;
+      border: none;
+      max-width: 200px;
+      cursor: auto !important;
+      input {
+        color: red !important;
+        cursor: auto !important;
+      }
+    }
+    .sumFiledItemText {
+      margin-right: 10px;
+    }
+  }
+}
+
+.selectAddress {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+.imagesUpload {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+.filesUpload {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+.ant-form-item {
+  margin-bottom: 0px !important;
+}
+// .adm-list-item-content-main {
+//   padding: 0,
+// }
+
+.ant-form-item-explain-error {
+  padding-left: 20px;
+}
+
+.form-container {
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  &-save {
+    font-size: 14px;
+    padding: 10px;
+    color: #1677ff;
+  }
+  &-container {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    &-base {
+      flex: 1;
+      // 禁用
+      .disable {
+        background-color: #f2f2f2;
+      }
+      .disable &-item {
+        &-label,
+        &-element {
+          color: #999;
+        }
+      }
+      &-item {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #FAFAFA;
+        &-label {
+          flex: 1.8;
+          text-align: right;
+          font-size: 14px;
+        }
+        &-required {
+          width: 2px;
+          height: 14px;
+          margin-left: 4px;
+          background-color: red;
+        }
+        &-element {
+          background: #fff;
+          flex: 3;
+          display: flex;
+          padding: 15px 0;
+          justify-content: flex-end;
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+    &-sum {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      &-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &-label {
+          color: #333;
+        }
+        &-input {
+          flex: 1;
+          background-color: #F2F2F2;
+          margin-left: 10px;
+        }
+      }
+    }
+    &-sub {
+      flex: 1;
+      &-add {
+        padding: 10px 20px;
+        text-align: center;
+        background-color: #FFF;
+        margin-bottom: 10px;
+        &-title {
+          font-size: 16px;
+          color: #333;
+        }
+      }
+    }
+  }
+  &-collapse {
+    &-content {
+      &-arrow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    .adm-list-item-content {
+      flex: 1;
+      .ant-form-item {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}

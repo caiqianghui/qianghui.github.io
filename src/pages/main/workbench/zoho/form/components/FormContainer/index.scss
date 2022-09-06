@@ -1,0 +1,14 @@
+.add-btn {
+  padding: 40px;
+}
+
+.disableSumInput {
+  color: red !important;
+  background: white !important;
+  border: none;
+  cursor: auto !important;
+  input {
+    color: red !important;
+    cursor: auto !important;
+  }
+}

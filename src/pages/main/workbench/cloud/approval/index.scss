@@ -1,0 +1,36 @@
+.cloud {
+  &-approval {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &-tabs {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      .adm-tabs {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .adm-tabs-header {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          background: var(--adm-color-background);
+        }
+        .adm-tabs-content {
+          flex: 1;
+        }
+      }
+      &-tab-content {
+        height: 100%;
+        &-foot {
+          width: 100%;
+          text-align: center;
+          color: #666;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}

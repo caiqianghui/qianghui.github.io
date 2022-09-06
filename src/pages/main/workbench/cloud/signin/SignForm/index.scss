@@ -1,0 +1,289 @@
+
+
+.sign-form {
+  height: 100%;
+  &-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    &-scroll {
+      padding: 0px 20px;
+      flex: 1;
+      overflow-y: auto;
+    }
+    &-submit {
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .baseSectiosContent {
+      .collapse-content {
+        border-top: none;
+        .adm-list {
+          --border-top: none;
+          --border-bottom: none;
+        }
+        .adm-list.adm-list-default {
+          background-color: #F2F2F3;
+          --border-inner: none;
+          .adm-plain-anchor.adm-collapse-panel-header {
+            border-top: 2px solid var(--adm-border-color);
+            padding: 24px 24px 0 24px;
+          }
+          .adm-list-item {
+            padding-left: 0;
+            .adm-list-item-content {
+              padding: 0;
+              border-bottom: 2px solid var(--adm-border-color);
+              padding-bottom: 24px;
+            }
+          }
+          .adm-collapse-panel-content {
+            background-color: #F7F7F8;
+          }
+        }
+        .title-content {
+          background: #FFF;
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFF;
+        padding: 20px 40px;
+        .title {
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    
+      .buttomBtn {
+        padding-top: 10px;
+        background-color: #F7F7F8;
+        .buttomBtnText {
+          color: #999;
+          font-size: 16px;
+        }
+      }
+    }
+    
+    .subSelectionContent {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      .section-content {
+        .adm-plain-anchor.adm-collapse-panel-header {
+          padding: 0 24px;
+        }
+        .adm-list-item {
+          padding-left: 0;
+          .adm-list-item-content {
+            padding: 0;
+            padding: 24px 0;
+          }
+        }
+      }
+      .title {
+        color: #666666;
+      }
+      .collapse-content {
+        padding-top: 10px;
+        background-color: rgb(255, 255, 255);
+        .adm-list {
+          --border-top: none;
+          --border-bottom: none;
+        }
+        .adm-list.adm-list-default {
+          background-color: #F2F2F3;
+          --border-inner: none;
+          .adm-plain-anchor.adm-collapse-panel-header {
+            // padding: 24px 24px 24px 48px;
+            padding-left: 48px;
+            padding-right: 24px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            .adm-list-item-content {
+              flex: 1
+            }
+          }
+          .adm-collapse-panel-content {
+            background-color: #F7F7F8;
+          }
+          .adm-list-item {
+            padding-left: 0;
+            .adm-list-item-content {
+              padding: 0;
+            }
+          }
+        }
+        .title-content {
+          background: #FFF;
+        }
+      }
+      .arrow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .delete {
+          padding-left: 20px;
+        }
+      }
+      .swiperContent {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .swiperContent-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          background-color: #F2F2F3;
+        }
+        .buttomBtn {
+          padding-top: 10px;
+          .buttomBtnText {
+            color: #999;
+            font-size: 16px;
+          }
+        }
+      }
+      .addContent {
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 18px;
+        background-color: #FFF;
+      }
+    }
+    
+    .sumFieldContent {
+      margin-bottom: 0;
+      .sumFiledItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        .disableSumInput {
+          color: red !important;
+          background: white !important;
+          border: none;
+          max-width: 200px;
+          cursor: auto !important;
+          input {
+            color: red !important;
+            cursor: auto !important;
+          }
+        }
+        .sumFiledItemText {
+          margin-right: 10px;
+        }
+      }
+    }
+    
+    .selectAddress {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+    .imagesUpload {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      .title {
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+    
+    .filesUpload {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      .title {
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+    .form-item {
+      background-color: #fff;
+    }
+    
+    .form-item-label {
+      margin-bottom: 0;
+      margin-top: 0;
+      .space-between {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .formItem {
+        // background: #FAFAFA;
+        border-bottom: 1px solid #F2F2F2;
+        .label {
+          font-size: 14px;
+          flex: 3.5;
+          padding-right: 10px;
+          // text-align: right;
+          color: #666666;
+          .required {
+            margin-right: 10px;
+            font-family: SimSun,sans-serif;
+            color: var(--adm-color-danger);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+        }
+        .label.disable {
+          color:rgb(223, 222, 222);
+        }
+        .element-field {
+          flex: 6.6;
+          background: #fff;
+          display: flex;
+          padding: 30px 0;
+        }
+        .element {
+          flex: 6.6;
+          background: #fff;
+          display: flex;
+          padding: 10px 0;
+          justify-content: flex-end;
+          // border-bottom: 1px solid #eee;
+        }
+        .element.disable {
+          background: #FAFAFA;
+        }
+      }
+    }
+    .title {
+      .normal-field {
+        padding: 0 20px;
+      }
+    }
+    .section-error {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-text {
+        font-size: 14px;
+        color: #ec2c64;
+        margin: 20px;
+      }
+    }
+  }
+}
+
